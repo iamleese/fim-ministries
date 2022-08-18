@@ -1,0 +1,16 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-fim-ministries-contact-info.contacts-list .contact {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #000000;
+}
+.wp-block-fim-ministries-contact-info.contacts-list p.contact-info {
+  margin: 0;
+  padding: 0;
+}
+.wp-block-fim-ministries-contact-info.contacts-list:last-child .contact {
+  border-bottom: 0;
+}/*# sourceMappingURL=style.css.map */

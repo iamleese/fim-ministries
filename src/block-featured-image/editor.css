@@ -1,0 +1,20 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.remove-contact {
+  font-family: sans-serif;
+  text-decoration: underline;
+  color: red;
+  font-size: 14px;
+  border: 0;
+  background: transparent;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.position-plain-text {
+  font-weight: 700;
+}/*# sourceMappingURL=editor.css.map */
