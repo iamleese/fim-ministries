@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "fim-ministries/ministry-listing",
+	"version": "0.1.0",
+	"title": "Ministry Listing",
+	"category": "ministry-blocks",
+	"icon": "menu",
+	"description": "Lists ministries by category",
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"hide_empty" : {
+			"type" : "boolean",
+			"default" : true
+		}
+	},
+	"textdomain": "fim-ministries",
+	"editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "fim-ministries/ministry-category-description",
+	"version": "0.1.0",
+	"title": "Ministry Category Description",
+	"category": "ministry-blocks",
+	"icon": "editor-ul",
+	"description": "Displays the Ministry Category Description",
+	"supports": {
+		"html": true
+	},
+	"textdomain": "fim-ministries",
+	"editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
