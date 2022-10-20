@@ -9,7 +9,7 @@ Plugin Name: FIM Ministries
 Plugin URI: https://faithinmarketing.com
 Description: FIM Ministries
 Author: Melissa Hiatt
-Version: 2.0.0
+Version: 3.0.0
 Author URI: https://faithinmarketing.com
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -20,6 +20,11 @@ This plugin creates ministry pages
 
 
 == Changelog ==
+= 3.0.0 =
+* Refined blocks and block listing.
+* Restructured plugin.
+* Block Patterns to use in templates
+
 
 = 2.0.0 =
 * Added Custom Blocks to Post Types
