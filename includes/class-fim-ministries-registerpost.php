@@ -15,7 +15,7 @@
 
 /**
  */
-class Stmoministries_Post_Type {
+class FIM_Ministries_Post_Type {
 
     public function __construct( $plugin_name, $version ) {
 

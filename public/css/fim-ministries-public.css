@@ -1,0 +1,26 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.fim-ministry-category-list-container {
+  display: block;
+  background-color: inherit;
+}
+.fim-ministry-category-list-container.has-background-color {
+  padding: 0 !important;
+}
+.fim-ministry-category-list-container .ministry_category_menu {
+  padding: 20px;
+}
+.fim-ministry-category-list-container .ministry_category_menu a {
+  color: inherit;
+}
+
+.fim-ministry-category-list-heading {
+  display: block;
+  color: inherit;
+  margin: 0;
+}
+.fim-ministry-category-list-heading.has-background {
+  padding: 20px !important;
+}

@@ -7,3 +7,8 @@
 .wp-block-fim-ministries-ministry-listing  {
   @import './style';
 }
+
+  .components-panel__row{
+    display: flex;
+    flex-flow: column;
+  }

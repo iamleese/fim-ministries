@@ -1,3 +1,1 @@
-<?php
-//Our hearts are restless until they rest in thee.
-?>
+<?php // Silence is golden

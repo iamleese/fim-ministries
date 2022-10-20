@@ -20,7 +20,7 @@ import './editor.scss';
  */
 export default function Edit( {attributes, setAttributes}) {
 
-  const { contacts } = attributes.contacts;
+  const contacts = attributes.contacts;
 
   const contactList = contacts
    .sort((a, b) => a.index - b.index)
@@ -108,6 +108,7 @@ export default function Edit( {attributes, setAttributes}) {
 
       <button
         className="remove-contact"
+        variant="tertiary"
         onClick={() => {
           const newContacts = contacts
           .filter(item => item.index != contact.index)
@@ -140,6 +141,7 @@ export default function Edit( {attributes, setAttributes}) {
     {contactList}
     <button
       className="add-more-contacts"
+      variant="secondary"
       onClick= { () =>
           setAttributes({
             contacts: [

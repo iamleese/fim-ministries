@@ -16,7 +16,7 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save({attributes}) {
-  const {contacts} = attributes.contacts;
+  const contacts = attributes.contacts;
 
     const contactsList = contacts.map(function(contact) {
 		  return (

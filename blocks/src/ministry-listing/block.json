@@ -14,6 +14,14 @@
 		"hide_empty" : {
 			"type" : "boolean",
 			"default" : true
+		},
+		"category" : {
+			"type" : "string",
+			"default": ""
+		},
+		"category_name": {
+			"type": "boolean",
+			"default": true
 		}
 	},
 	"textdomain": "fim-ministries",

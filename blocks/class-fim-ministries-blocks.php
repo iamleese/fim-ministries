@@ -3,8 +3,7 @@
  * Blocks for the Gutenberg
  *
  * @link       https://faithinmarketing.com
- * @since      2.0.0
- *
+ * @since      2.0.1
  * @package    FIM_Ministries
  * @subpackage FIM_Ministries/blocks
  */
@@ -54,7 +53,6 @@ class FIM_Ministries_Blocks {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
-
 	}
 
   public function add_block_category( $categories, $post ) {
@@ -79,7 +77,9 @@ class FIM_Ministries_Blocks {
 		register_block_type( __DIR__ . '/build/ministry-listing', array(
 			'render_callback' => array($this, 'MinistriesList'),
 			'attributes' => [
-					'hide_empty' => ['type' => 'boolean', 'default' => true ]
+					'hide_empty' => ['type' => 'boolean', 'default' => true ],
+					'category' => ['type' => 'string', 'default' => ''],
+					'category_name' => ['type' => 'boolean', 'default' => true],
 			]
 		));
 		register_block_type( __DIR__ . '/build/ministry-categories', array(
@@ -141,9 +141,9 @@ class FIM_Ministries_Blocks {
 		if( $show_all ){
 
 			if(empty($show_all_text)) {
-				$show_all_text = __('All Ministries', 'stmo_ministries');
+				$show_all_text = __('All Ministries', 'fim_ministries');
 			} else {
-				$show_all_text = __($show_all_text , 'stmo_ministries');
+				$show_all_text = __($show_all_text , 'fim_ministries');
 			}
 
 			$archive_id = get_option($this->option_name.'_page');
@@ -215,26 +215,45 @@ class FIM_Ministries_Blocks {
 	public function MinistriesList($attributes){
 
 		$hide_empty = $attributes['hide_empty'];
+		$category_id = $attributes['category'];
+		$display_name = $attributes['category_name'];
 
-		$categories = get_terms( array(
-			'taxonomy' => 'ministry-category',
-			'parent' => 0,
-			'orderby' => 'name',
-			'order' => 'ASC',
-			'hide_empty' => $hide_empty
-			) );
+
+
 
 		$ministries_list = '<div class="ministries-list">';
 
-		foreach($categories as $category){
-			$ministries_list .= '<div class="ministry-category-wrap">';
-			$ministries_list .='<h3 class="ministry-category-name"><a href="'. get_term_link($category->term_id,'ministry-category').'">'.$category->name.'</a></h3>';
-			$ministries_list .= $this->MinistriesCategoryList($category->term_id, $hide_empty);
-			$ministries_list .= '</div>';
+		if($category_id == ''){
+
+			$categories = get_terms( array(
+				'taxonomy' => 'ministry-category',
+				'parent' => 0,
+				'orderby' => 'name',
+				'order' => 'ASC',
+				'hide_empty' => $hide_empty
+				) );
+
+				foreach($categories as $category){
+					$ministries_list .= '<div class="ministry-category-wrap">';
+					$ministries_list .='<h3 class="ministry-category-name"><a href="'. get_term_link($category->term_id,'ministry-category').'">'.$category->name.'</a></h3>';
+					$ministries_list .= $this->MinistriesCategoryList($category->term_id, $hide_empty);
+					$ministries_list .= '</div>';
+				}
+
+		} else {
+
+				$ministries_list .= '<div class="ministry-category-wrap">';
+
+				if($display_name === true){
+					$term = get_term($category_id);
+					$link = get_term_link($term);
+					$ministries_list .= '<h3 class="ministry-category-name"><a href="'.$link.'">'.$term->name.'</a></h3>';
+				}
+				$ministries_list .= $this->MinistriesCategoryList($category_id, $hide_empty);
+				$ministries_list .= '</div>';
 		}
 
-
-		$ministries_list .= '</div>';
+			$ministries_list .= '</div>';
 
 		return $ministries_list;
 
@@ -245,8 +264,5 @@ class FIM_Ministries_Blocks {
 	public function MinistryCategoryDescription(){
 		return term_description();
 	}
-
-	
-
 
 }

@@ -5,42 +5,17 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.ministries-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2em;
 
-  .ministry-category-name{
-    margin: .5em 0;
-    font-weight: 700;
+  .ministries-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
 
-    a{
-      text-decoration: none;
-
-      &:hover{
-        text-decoration: underline;
-      }
-
-    }//end a
-  }
-
-  li{
-    list-style-type: none;
-  }
-
-  .sub_category{
-    list-style-type: none;
-    padding-left:0;
-    margin-left:0;
-
-    .sub_category_title{
+    .ministry-category-name{
+      margin: .5em 0;
       font-weight: 700;
-      padding-bottom: .5em;
-      text-transform: uppercase;
-      font-size: 1.5rem;
 
       a{
-        color: inherit;
         text-decoration: none;
 
         &:hover{
@@ -51,9 +26,35 @@
     }
 
     li{
+      list-style-type: none;
+    }
+
+    .sub_category{
+      list-style-type: none;
       padding-left:0;
       margin-left:0;
-    }
-  }
 
-}
+      .sub_category_title{
+        font-weight: 700;
+        padding-bottom: .5em;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+        a{
+          color: inherit;
+          text-decoration: none;
+
+          &:hover{
+            text-decoration: underline;
+          }
+
+        }//end a
+      }
+
+      li{
+        padding-left:0;
+        margin-left:0;
+      }
+    }
+
+  }

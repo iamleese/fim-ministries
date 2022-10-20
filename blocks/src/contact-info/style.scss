@@ -5,8 +5,22 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-fim-ministry-blocks-contact-info {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
-}
+ .wp-block-fim-ministries-contact-info.contacts-list .contact {
+   padding-bottom: 20px;
+   border-bottom: 1px dotted #000000;
+ }
+ .wp-block-fim-ministries-contact-info.contacts-list p.contact-info {
+   margin: 0;
+   padding: 0;
+ }
+ .wp-block-fim-ministries-contact-info.contacts-list:last-child .contact {
+   border-bottom: 0;
+ }
+
+
+ .wp-block-fim-ministries-contact-info{
+   .contactinfo-header{
+     padding-top:0;
+     margin-top:0
+   }
+ }
