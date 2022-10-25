@@ -104,22 +104,19 @@ class FIM_Ministries_Post_Type {
           'capability_type'       => 'post',
           'show_in_rest'          =>  true,
           'template' => array(
-                  array( 'core/post-featured-image'),
+                  array('core/columns',
+                    array('style' => array('spacing' => array('margin' => array('bottom' => 'var:preset|spacing|70') )) ),
+                    array(
+                        array('core/column', array('width' => '66.66%'), array(array('core/post-featured-image'))),
+                        array('core/column', array('width' => '33.33%'), array(array('fim-ministries/contact-info')))
+                    )
+                  ),
                   array('core/paragraph', array(
                     'placeholder' => __('Detailed description of your ministry', 'fim_ministries')
-                  )),
-                  array('core/heading', array(
-                    'level' => '3',
-                    'content' => 'Additional Information'
-                  ) ),
-                  array('core/post-excerpt', array(
-                    'placeholder' => __('A brief description about your ministry.')
-                  )),
-                  array('fim-ministries/time-requirement', array() ),
-                  array('fim-ministries/contact-info', array() ),
-                  array('fim-ministries/immediate-need', array() )
+                  ))
             )
         );
+
 
   			register_post_type( 'ministries', $args );
 
