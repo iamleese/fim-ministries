@@ -1,7 +1,7 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps, PlainText } from '@wordpress/block-editor';
-import { withState }  from '@wordpress/compose';
-import { TextControl }  from '@wordpress/components';
+import { useBlockProps } from '@wordpress/block-editor';
+import { TextControl, Button }  from '@wordpress/components';
+import {useEffect, useState} from '@wordpress/element';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * Those files can contain any CSS code that gets applied to the editor.
@@ -18,144 +18,117 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit( {attributes, setAttributes}) {
+export default function Edit( {attributes, setAttributes, isSelected}) {
 
-  const contacts = attributes.contacts;
+  const [ isEditingContact, setIsEditingContact ] = useState( false );
+  const [ isNewContact, setIsNewContact ] = useState(true);
 
-  const contactList = contacts
-   .sort((a, b) => a.index - b.index)
-    .map(contact => {
-     return (
-      <div className="contact-block" >
-        <PlainText
-        className="position-plain-text"
-        style={{ height: 58 }}
-        placeholder={__('Position')}
-        value={contact.position}
-        onChange={position => {
-          const newObject = Object.assign({}, contact, {
-          position: position
-          });
-          setAttributes({
-          contacts: [
-            ...contacts.filter(
-            item => item.index != contact.index
-            ),
-            newObject
-          ]
-          });
-        }}
-        />
-       <PlainText
-        className="name-plain-text"
-        style={{ height: 58 }}
-        placeholder={__('Contact Name')}
-        value={contact.name}
-        onChange={name => {
-          const newObject = Object.assign({}, contact, {
-          name: name
-          });
-          setAttributes({
-          contacts: [
-            ...contacts.filter(
-            item => item.index != contact.index
-            ),
-            newObject
-          ]
-          });
-        }}
-        />
-      <PlainText
-        className="phone-plain-text"
-        style={{ height: 58 }}
-        placeholder={__('Phone Number')}
-        value={contact.phone}
-        onChange={phone => {
-          const newObject = Object.assign({}, contact, {
-          phone: phone
-          });
-          setAttributes({
-          contacts: [
-            ...contacts.filter(
-            item => item.index != contact.index
-            ),
-            newObject
-          ]
-          });
-        }}
-        />
-        <PlainText
-        className="email-plain-text"
-        style={{ height: 58 }}
-        placeholder={__('Email')}
-        value={contact.email}
-        onChange={email => {
-          const newObject = Object.assign({}, contact, {
-          email: email
-          });
-          setAttributes({
-          contacts: [
-            ...contacts.filter(
-            item => item.index != contact.index
-            ),
-            newObject
-          ]
-          });
-        }}
-        />
+  const position = attributes.contact_position;
+  const name = attributes.contact_name;
+  const phone = attributes.contact_phone;
+  const email = attributes.contact_email;
+
+  function checkNew(){
+    if( !position && !name && !phone && !email){
+      setIsNewContact(true);
+    } else {
+      setIsNewContact(false);
+    }
+  }
 
 
 
-      <button
-        className="remove-contact"
-        variant="tertiary"
-        onClick={() => {
-          const newContacts = contacts
-          .filter(item => item.index != contact.index)
-          .map(c => {
-            if (c.index > contact.index) {
-            c.index -= 1;
-            }
+  useEffect( () => {
+		if ( ! isSelected ) {
+			setIsEditingContact( false );
+		}
 
-            return c;
-          });
+    checkNew();
 
-          setAttributes({
-          contacts: newContacts
+	}, [ isSelected ] );
 
-          });
-        }}
-        >
-        {__("Remove Contact")}
-        </button>
 
-      </div>
-    );
-    });
+  function toggleEditing( event ) {
+		event.preventDefault();
+		if(isEditingContact == false){
+			setIsEditingContact( true );
+		} else {
+			setIsEditingContact( false );
+		}
+	}
 
+
+
+  console.log(isNewContact);
 
 
 	return (
 		<div { ...useBlockProps() }>
-    <h3 className="contactinfo-header">Contact Information</h3>
-    {contactList}
-    <button
-      className="add-more-contacts"
-      variant="secondary"
-      onClick= { () =>
-          setAttributes({
-            contacts: [
-              ...attributes.contacts,
-              {
-                index: attributes.contacts.length,
-                position: ""
-              }
-            ]
-          })
-      }
-    >
-      {__('+ Add a Contact')}
-    </button>
+
+    {isEditingContact && (
+      <div className="contact-edit">
+        <TextControl
+        className="contact-position"
+        placeholder={__('Position')}
+        value={position}
+        onChange={ (val) => (setAttributes({contact_position : val }) , checkNew()) }
+        />
+        <TextControl
+        className="contact-name"
+        placeholder={__('Contact Name')}
+        value={name}
+        onChange={ (val) => setAttributes({contact_name : val })}
+        />
+        <TextControl
+        className="contact-phone"
+        placeholder={__('555-123-4567')}
+        value={phone}
+        onChange={ (val) => setAttributes({contact_phone : val })}
+        />
+        <TextControl
+        className="contact-email"
+        placeholder={__('yourname@address.com')}
+        value={email}
+        onChange={ (val) => setAttributes({contact_email : val })}
+        />
+
+        <Button
+  				variant = 'tertiary'
+  				onClick= { toggleEditing }
+  			>{__('Save Contact') }</Button>
+
+      </div>
+    )}
+
+    {!isEditingContact && !isNewContact && (
+      <div>
+      <Button
+        className='edit_contact'
+        onClick= {toggleEditing}
+      >
+      <span>Edit Contact</span>
+      </Button>
+      {position ? <h4 className="contact-position" >{position}</h4> : ''}
+      {name ? <span className="contact-name" >{name}</span> : '' }
+      {phone ? <span className="contact-phone" >{phone}</span> : ''}
+      {email ? <span className="contact-email" ><a href={email}>{__('Email')}</a></span> : ''}
+      </div>
+    )}
+
+    { isNewContact && !isEditingContact && (
+      <div className="new-contact-container">
+      <Button
+        className='edit_contact'
+        onClick= {toggleEditing}
+      >
+      <span>Edit Contact</span>
+      </Button>
+      <h4 className="contact-position" >{__('Position')}</h4>
+      <span className="contact-name" >{__('Sam Smith')}</span>
+      <span className="contact-phone" >(123) 456-7890</span>
+      <span className="contact-email" >{__('Email')}</span>
+      </div>
+    )}
 
 		</div>
 	);

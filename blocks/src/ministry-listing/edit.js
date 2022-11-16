@@ -3,44 +3,45 @@
 */
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { useState, useEffect } from '@wordpress/element';
-import apiFetch from '@wordpress/api-fetch';
+import ServerSideRender from '@wordpress/server-side-render';
+import { ToggleControl, Panel, PanelBody, PanelRow } from '@wordpress/components';
 
 
 import './editor.scss';
 
-export default function Edit() {
+export default function Edit( { attributes, setAttributes } ) {
 
-        const [massTimes, setMassTimes] = useState(null);
-        const [getMassTimes, setGetMassTimes ] = useState( false );
+        var hide_empty = attributes.hide_empty;
 
-        useEffect( () => {
-          apiFetch( { path: '/wp/v2/settings/fim_parish_info_mass_times' }).then(
-            (result) => {
-
-              setGetMassTimes(true);
-              setMassTimes( result );
-              }
-          )
-        }, []);
-
-
-        if(getMassTimes === true && massTimes){
-
-          const
-
-          massTimes.forEach(function(massTimeGroup){
-
-          });
-
-        }
-
-
-
+        const blockProps = useBlockProps();
 
         return (
-          <div { ...useblockProps() }>
+          <div { ...blockProps }>
+          <ServerSideRender
+              block="fim-ministries/ministry-listing"
+              attributes = { attributes }
+          />
+          <InspectorControls key="setting">
+          <Panel>
+              <PanelBody title="Category Visibility">
+                <PanelRow>
+                  <ToggleControl
+                    label="Hide Empty Categories"
+                    checked = { hide_empty }
+                    help={
+                        hide_empty
+                            ? 'Hiding empty categories'
+                            : 'Showing empty categories'
+                    }
+                    onChange={ (val) => { setAttributes( { hide_empty: val } );
+                    } }
 
+                  />
+                  </PanelRow>
+
+              </PanelBody>
+          </Panel>
+          </InspectorControls>
 
           </div>
         );

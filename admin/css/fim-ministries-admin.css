@@ -1,3 +1,11 @@
 .editor-styles-wrapper .wp-block-post-excerpt__more-link{
   display: none;
 }
+
+.ministry-page-contact .wp-block-post-featured-image{
+  max-width:60%;
+}
+
+.ministry-page-contact .wp-block-fim-ministries-contact-group{
+  flex: 1;
+}

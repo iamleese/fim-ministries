@@ -3,43 +3,32 @@
   "apiVersion": 2,
   "name": "fim-ministries/contact-info",
   "version": "0.1.0",
-  "title": "Blocks",
-  "category": "fim-ministries",
+  "title": "Minstry Contact",
+  "category": "ministry-blocks",
   "icon": "smiley",
   "description": "Ministry Contact Block",
   "supports": {
     "html": false
   },
   "attributes": {
-    "contacts": {
-      "source": "query",
-      "selector": ".contact.item",
-      "default": [],
-      "query": {
-        "index": {
-          "source": "text",
-          "selector": ".contact-index"
-        },
-        "position": {
-          "source": "text",
-          "selector": ".contact-position"
-        },
-        "name": {
-          "source": "text",
-          "selector": ".contact-name"
-        },
-        "phone": {
-          "source": "text",
-          "selector": ".contact-phone"
-        },
-        "email": {
-          "source": "text",
-          "selector": ".contact-email"
-        }
-      }
+    "contact_position": {
+      "type": "string",
+      "default": ""
+    },
+    "contact_name": {
+      "type": "string",
+      "default": ""
+    },
+    "contact_phone": {
+      "type": "string",
+      "default": ""
+    },
+    "contact_email": {
+      "type": "string",
+      "default": ""
     }
   },
-  "textdomain": "blocks",
+  "textdomain": "fim-ministries",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

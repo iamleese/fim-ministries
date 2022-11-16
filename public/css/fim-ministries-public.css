@@ -24,3 +24,11 @@
 .fim-ministry-category-list-heading.has-background {
   padding: 20px !important;
 }
+
+.ministry-page-contact .wp-block-post-featured-image{
+  max-width:60%;
+}
+
+.ministry-page-contact .wp-block-fim-ministries-contact-group{
+  flex: 1;
+}
