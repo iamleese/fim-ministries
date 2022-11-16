@@ -71,7 +71,9 @@ class FIM_Ministries_Blocks {
 
 	public function register_ministry_blocks(){
 		register_block_type( __DIR__ . '/build/contact-info' );
+		register_block_type( __DIR__ . '/build/contact-group' );
 	}
+
 
 	public function register_ministry_template_blocks(){
 		register_block_type( __DIR__ . '/build/ministry-listing', array(

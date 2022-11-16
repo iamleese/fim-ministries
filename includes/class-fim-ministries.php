@@ -241,9 +241,8 @@ class FIM_Ministries {
 
 		$plugin_blocks = new FIM_Ministries_Blocks( $this->get_plugin_name(), $this->get_version() );
 
-			if (get_current_post_type() === 'ministries') {
-				$this->loader->add_action( 'init', $plugin_blocks, 'register_ministry_blocks');
-	    }
+			$this->loader->add_action( 'init', $plugin_blocks, 'register_ministry_blocks');
+
 			//load blocks used for templates
 			$this->loader->add_action( 'init', $plugin_blocks, 'register_ministry_template_blocks');
 			$this->loader->add_filter( 'block_categories', $plugin_blocks, 'add_block_category', 10, 2);
