@@ -146,6 +146,9 @@ class FIM_Ministries_Admin {
 
 	<?php } //end fim_ministry_page_cb
 
+
+
+
 	/**
 	* Set Indicator for Directory Page under Page list
 	**/

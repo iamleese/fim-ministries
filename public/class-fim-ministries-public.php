@@ -38,6 +38,8 @@ class FIM_Ministries_Public {
 	 */
 	private $version;
 
+	private $option_name = 'fim_ministry';
+
 	/**
 	 * Initialize the class and set its properties.
 	 *
@@ -74,5 +76,17 @@ class FIM_Ministries_Public {
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/fim-ministries-public.js', array( 'jquery' ), $this->version, false );
 
 	}
+
+	public function ministries_archive_display($content){
+
+			if( is_post_type_archive('ministries') ){
+			$ministry_page = get_option($this->option_name.'_page');
+			$post = get_post($ministry_page);
+			$content = $post->post_content;
+		}
+		return $content;
+
+	}
+
 
 }
