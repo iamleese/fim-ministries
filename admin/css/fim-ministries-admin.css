@@ -3,9 +3,13 @@
 }
 
 .ministry-page-contact .wp-block-post-featured-image{
-  max-width:60%;
+  width:60%;
 }
 
 .ministry-page-contact .wp-block-fim-ministries-contact-group{
   flex: 1;
+}
+
+#adminmenu .menu-icon-ministries .wp-menu-image img{
+  padding: 0;
 }

@@ -5,7 +5,6 @@
 	"version": "0.1.0",
 	"title": "Ministry Listing",
 	"category": "ministry-blocks",
-	"icon": "menu",
 	"description": "Lists ministries by category",
 	"supports": {
 		"html": true
