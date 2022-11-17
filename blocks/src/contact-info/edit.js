@@ -57,11 +57,6 @@ export default function Edit( {attributes, setAttributes, isSelected}) {
 		}
 	}
 
-
-
-  console.log(isNewContact);
-
-
 	return (
 		<div { ...useBlockProps() }>
 
