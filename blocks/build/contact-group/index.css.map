@@ -1,1 +1,0 @@
-{"version":3,"file":"contact-group/index.css","mappings":";;;AACC;EACC;AAAF,C","sources":["webpack://blocks/./src/contact-group/editor.scss"],"sourcesContent":[".wp-block-fim-ministries-contact-group {\n\t.block-list-appender{\n\t\tz-index: 10;\n\t}\n}\n"],"names":[],"sourceRoot":""}
