@@ -5,7 +5,6 @@
 	"version": "0.1.0",
 	"title": "Ministry Category Description",
 	"category": "ministry-blocks",
-	"icon": "editor-ul",
 	"description": "Displays the Ministry Category Description",
 	"supports": {
 		"html": true
