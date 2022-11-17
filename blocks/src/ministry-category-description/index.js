@@ -28,7 +28,7 @@ import icons from '../../assets/icons.js';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType( metadata.name, {
-  icon: icon.categorydescription,
+  icon: icons.categorydescription,
 	/**
 	 * @see ./edit.js
 	 */

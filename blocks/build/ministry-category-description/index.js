@@ -291,7 +291,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
-  icon: icon.categorydescription,
+  icon: _assets_icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].categorydescription,
   /**
    * @see ./edit.js
    */
