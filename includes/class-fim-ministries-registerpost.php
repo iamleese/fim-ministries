@@ -98,7 +98,7 @@ class FIM_Ministries_Post_Type {
           'can_export'            => true,
           'has_archive'           => true,
           'exclude_from_search'   => false,
-          'menu_icon'             => plugin_dir_url(__FILE__).'images/fim_ministry_icon.png',
+          'menu_icon'             => plugin_dir_url(__FILE__).'images/ministry-icon.svg',
           'rewrite'	            => array( 'slug' => $rewrite_slug, 'with_front' => true ),
           'publicly_queryable'    => true,
           'capability_type'       => 'post',
@@ -114,11 +114,24 @@ class FIM_Ministries_Post_Type {
                                                         ]
                                           ],
                                           [
-                                            ['core/post-featured-image',[]],
-                                            ['fim-ministries/contact-group',[],
-                                              [['fim-ministries/contact-info', []]
+                                            ['core/post-featured-image',
+                                              ['className' => 'ministry-featured-image']
+                                            ],
+                                            ['core/group',
+                                              [ 'className'=>'ministry-page-contact-info'],
+                                              [
+                                                ['core/heading',
+                                                 ['className' => 'ministry-contact-heading',
+                                                  'fontSize' => 'large',
+                                                  'level' => 3,
+                                                  'content' => __('Contact Information','fim_ministries')
+                                                 ]
+                                                 ],
+                                                 ['fim-ministries/contact-group',[],
+                                                  [['fim-ministries/contact-info',[]]]
+                                                 ]
                                               ]
-                                            ]
+                                            ],
                                           ]
                                         ],
                                         ['core/paragraph',

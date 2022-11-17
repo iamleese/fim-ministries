@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "title": "Minstry Contact",
   "category": "ministry-blocks",
-  "icon": "smiley",
   "description": "Ministry Contact Block",
   "supports": {
     "html": false
