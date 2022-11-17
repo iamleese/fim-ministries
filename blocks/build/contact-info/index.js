@@ -1,13 +1,214 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./assets/icons.js":
 /*!*************************!*\
   !*** ./assets/icons.js ***!
   \*************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/assets/icons.js: Unexpected token (20:29)\n\n\u001b[0m \u001b[90m 18 |\u001b[39m icons\u001b[33m.\u001b[39mlisting \u001b[33m=\u001b[39m \u001b[33m<\u001b[39m\u001b[33msvg\u001b[39m xmlns\u001b[33m=\u001b[39m\u001b[32m\"http://www.w3.org/2000/svg\"\u001b[39m viewBox\u001b[33m=\u001b[39m\u001b[32m\"0 0 14.72 14.13\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mpath\u001b[39m d\u001b[33m=\u001b[39m\u001b[32m\"M3.02 3.61h1.3s-.04-.02-.05-.03C2.78 2.72.87 3.23.01 4.71l.54.31C1 4.23 1.83 3.79 2.68 3.78V3.6h.34ZM2.68 5.56V5.4c-.29 0-.57.16-.73.43l.76.44.75-.43a.952.952 0 0 0-.25-.28h-.53Z\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"#f79520\"\u001b[39m\u001b[35m/><path d=\"M4.43 1.9h1v-.34L2.72 0 0 1.57v2.32c.47-.53 1.08-.91 1.77-1.1.9-.24 1.84-.13 2.65.32V1.9ZM.98 5.27l.54.31c.25-.43.69-.67 1.16-.68v-.63c-.68.01-1.33.37-1.7.99Z\" fill=\"#f79520\"/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mpath\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"#4d4d4e\"\u001b[39m d\u001b[33m=\u001b[39m\u001b[32m\"M6.05 3.94v-1.7H4.76v1.7H3.02v1.29H4.76v3.38h1.29V5.23h1.74V3.94H6.05z\"\u001b[39m\u001b[35m/><rect x=\"7.04\" y=\"10.67\" width=\"3.22\" height=\"3.22\" rx=\".57\" ry=\".57\" fill=\"none\" stroke=\"#231f20\" stroke-miterlimit=\"10\" stroke-width=\".5\"/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mrect\u001b[39m x\u001b[33m=\u001b[39m\u001b[32m\"11.26\"\u001b[39m y\u001b[33m=\u001b[39m\u001b[32m\"10.67\"\u001b[39m width\u001b[33m=\u001b[39m\u001b[32m\"3.22\"\u001b[39m height\u001b[33m=\u001b[39m\u001b[32m\"3.22\"\u001b[39m rx\u001b[33m=\u001b[39m\u001b[32m\".57\"\u001b[39m ry\u001b[33m=\u001b[39m\u001b[32m\".57\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"none\"\u001b[39m stroke\u001b[33m=\u001b[39m\u001b[32m\"#231f20\"\u001b[39m stroke\u001b[33m-\u001b[39mmiterlimit\u001b[33m=\u001b[39m\u001b[32m\"10\"\u001b[39m stroke\u001b[33m-\u001b[39mwidth\u001b[33m=\u001b[39m\u001b[32m\".5\"\u001b[39m\u001b[35m/><rect x=\"7.04\" y=\"6.45\" width=\"3.22\" height=\"3.22\" rx=\".57\" ry=\".57\" fill=\"none\" stroke=\"#231f20\" stroke-miterlimit=\"10\" stroke-width=\".5\"/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mrect\u001b[39m x\u001b[33m=\u001b[39m\u001b[32m\"11.26\"\u001b[39m y\u001b[33m=\u001b[39m\u001b[32m\"6.45\"\u001b[39m width\u001b[33m=\u001b[39m\u001b[32m\"3.22\"\u001b[39m height\u001b[33m=\u001b[39m\u001b[32m\"3.22\"\u001b[39m rx\u001b[33m=\u001b[39m\u001b[32m\".57\"\u001b[39m ry\u001b[33m=\u001b[39m\u001b[32m\".57\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"none\"\u001b[39m stroke\u001b[33m=\u001b[39m\u001b[32m\"#231f20\"\u001b[39m stroke\u001b[33m-\u001b[39mmiterlimit\u001b[33m=\u001b[39m\u001b[32m\"10\"\u001b[39m stroke\u001b[33m-\u001b[39mwidth\u001b[33m=\u001b[39m\u001b[32m\".5\"\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33msvg\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m icons\u001b[33m.\u001b[39mcategorydescription \u001b[33m=\u001b[39m \u001b[33m<\u001b[39m\u001b[33m?\u001b[39mxml version\u001b[33m=\u001b[39m\u001b[32m\"1.0\"\u001b[39m encoding\u001b[33m=\u001b[39m\u001b[32m\"UTF-8\"\u001b[39m\u001b[33m?\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33msvg\u001b[39m id\u001b[33m=\u001b[39m\u001b[32m\"b\"\u001b[39m xmlns\u001b[33m=\u001b[39m\u001b[32m\"http://www.w3.org/2000/svg\"\u001b[39m viewBox\u001b[33m=\u001b[39m\u001b[32m\"0 0 13.78 13.19\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mg\u001b[39m id\u001b[33m=\u001b[39m\u001b[32m\"c\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mg\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mpath\u001b[39m d\u001b[33m=\u001b[39m\u001b[32m\"M3.02,3.61h1.3s-.04-.02-.05-.03C2.78,2.72,.87,3.23,.01,4.71l.54,.31c.45-.79,1.28-1.23,2.13-1.24v-.18h.34Z\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"#f79520\"\u001b[39m\u001b[35m/><path d=\"M2.68,5.56v-.16c-.29,0-.57,.16-.73,.43l.76,.44,.75-.43c-.06-.11-.15-.2-.25-.28h-.53Z\" fill=\"#f79520\"/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mpath\u001b[39m d\u001b[33m=\u001b[39m\u001b[32m\"M4.43,1.9h1v-.34L2.72,0,0,1.57V3.89c.47-.53,1.08-.91,1.77-1.1,.9-.24,1.84-.13,2.65,.32V1.9Z\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"#f79520\"\u001b[39m\u001b[35m/><path d=\"M.98,5.27l.54,.31c.25-.43,.69-.67,1.16-.68v-.63c-.68,.01-1.33,.37-1.7,.99Z\" fill=\"#f79520\"/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mpolygon\u001b[39m points\u001b[33m=\u001b[39m\u001b[32m\"6.05 3.94 6.05 2.24 5.43 2.24 4.76 2.24 4.76 3.31 4.76 3.93 4.76 3.94 4.76 3.94 3.59 3.94 3.02 3.94 3.02 4.3 3.02 4.94 3.02 5.23 3.59 5.23 4.4 5.23 4.76 5.23 4.76 5.23 4.76 8.61 6.05 8.61 6.05 5.23 7.79 5.23 7.79 3.94 6.05 3.94\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"#4d4d4e\"\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[35m/g><rect x=\"7.04\" y=\"6.45\" width=\"6.49\" height=\"6.49\" rx=\".57\" ry=\".57\" fill=\"none\" stroke=\"#231f20\" stroke-miterlimit=\"10\" stroke-width=\".5\"/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mpath\u001b[39m d\u001b[33m=\u001b[39m\u001b[32m\"M9.95,10.98v-1.1h-.15c-.08,0-.15-.07-.15-.15v-.36c0-.08,.07-.15,.15-.15h.85c.08,0,.15,.07,.15,.15v1.62h.15c.08,0,.15,.07,.15,.15v.36c0,.08-.07,.15-.15,.15h-1.16c-.08,0-.15-.07-.15-.15v-.36c0-.08,.07-.15,.15-.15h.15Zm.97-2.68c0,.3-.25,.55-.55,.55s-.55-.25-.55-.55,.25-.55,.55-.55,.55,.25,.55,.55Z\"\u001b[39m fill\u001b[33m=\u001b[39m\u001b[32m\"#231f20\"\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mg\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33msvg\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m icons\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n    at instantiate (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:72:32)\n    at constructor (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:367:12)\n    at JSXParserMixin.raise (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:3706:19)\n    at JSXParserMixin.unexpected (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:3744:16)\n    at JSXParserMixin.jsxParseIdentifier (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:7947:12)\n    at JSXParserMixin.jsxParseNamespacedName (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:7957:23)\n    at JSXParserMixin.jsxParseElementName (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:7968:21)\n    at JSXParserMixin.jsxParseOpeningElementAt (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:8067:22)\n    at JSXParserMixin.jsxParseElementAt (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:8099:33)\n    at JSXParserMixin.jsxParseElement (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:8184:17)\n    at JSXParserMixin.parseExprAtom (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:8198:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12875:23)\n    at JSXParserMixin.parseUpdate (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12854:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12824:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12615:61)\n    at JSXParserMixin.parseExprOps (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12622:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12592:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12544:21)\n    at JSXParserMixin.parseMaybeAssign (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12576:25)\n    at JSXParserMixin.parseExpressionBase (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12480:23)\n    at /Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12474:39\n    at JSXParserMixin.allowInAnd (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:14570:16)\n    at JSXParserMixin.parseExpression (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:12474:17)\n    at JSXParserMixin.parseStatementContent (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:15014:23)\n    at JSXParserMixin.parseStatement (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:14871:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:15531:25)\n    at JSXParserMixin.parseBlockBody (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:15522:10)\n    at JSXParserMixin.parseProgram (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:14785:10)\n    at JSXParserMixin.parseTopLevel (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:14772:25)\n    at JSXParserMixin.parse (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:16799:10)\n    at parse (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/parser/lib/index.js:16851:38)\n    at parser (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/core/lib/parser/index.js:52:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)\n    at transform (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/@babel/core/lib/transform.js:29:41)\n    at transform.next (<anonymous>)\n    at step (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/gensync/index.js:261:32)\n    at /Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/gensync/index.js:273:13\n    at async.call.result.err.err (/Users/melissahiatt/Sites/wpdev/wp-content/plugins/fim-ministries/blocks/node_modules/gensync/index.js:223:11)");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+const icons = {};
+icons.contactgroup = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 15.24 16.01"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M4.72 5.78h.69s-.02-.01-.03-.02c-.79-.45-1.8-.18-2.25.6l.29.17c.24-.42.68-.65 1.13-.66v-.09h.18ZM4.55 6.82v-.09c-.15 0-.3.09-.39.23l.4.23.4-.23a.47.47 0 0 0-.13-.15h-.28Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M5.47 4.88H6V4.7l-1.44-.83-1.44.83v1.23c.25-.28.57-.48.94-.58.48-.13.97-.07 1.41.17v-.63ZM3.65 6.67l.29.17c.13-.23.37-.36.61-.36v-.33c-.36 0-.71.19-.9.53Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  fill: "#4d4d4e",
+  d: "M6.33 5.96v-.9H5.65V5.96H4.72v.68H5.65v1.8h.68v-1.8h.93v-.68h-.93z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M11.91 10.5v.52c0 .33-.27.6-.6.6H6.94c-.33 0-.6-.27-.6-.6v-.52c0-.92.75-1.67 1.67-1.67h.21c.28.13.58.2.91.2s.63-.07.91-.2h.21c.92 0 1.67.75 1.67 1.67ZM7.54 6.84c0-.88.71-1.59 1.59-1.59s1.59.71 1.59 1.59-.71 1.59-1.59 1.59-1.59-.71-1.59-1.59Z",
+  fill: "#231f20"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: ".31",
+  y: "3.27",
+  width: "12.43",
+  height: "12.43",
+  rx: "1.9",
+  ry: "1.9",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".62"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "2.5",
+  y: ".31",
+  width: "12.43",
+  height: "12.43",
+  rx: "1.9",
+  ry: "1.9",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".62"
+}));
+icons.contact = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 16.57 14.61"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M3.02 3.61h1.3s-.04-.02-.05-.03C2.78 2.72.87 3.23.01 4.71l.54.31C1 4.23 1.83 3.79 2.68 3.78V3.6h.34ZM2.68 5.56V5.4c-.29 0-.57.16-.73.43l.76.44.75-.43a.952.952 0 0 0-.25-.28h-.53Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M4.43 1.9h1v-.34L2.72 0 0 1.57v2.32c.47-.53 1.08-.91 1.77-1.1.9-.24 1.84-.13 2.65.32V1.9ZM.98 5.27l.54.31c.25-.43.69-.67 1.16-.68v-.63c-.68.01-1.33.37-1.7.99Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  fill: "#4d4d4e",
+  d: "M6.05 3.94v-1.7H4.76v1.7H3.02v1.29H4.76v3.38h1.29V5.23h1.74V3.94H6.05z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M16.57 12.51v.97c0 .62-.5 1.12-1.12 1.12H7.19c-.62 0-1.12-.5-1.12-1.12v-.97a3.15 3.15 0 0 1 3.15-3.15h.39c.52.24 1.1.38 1.71.38s1.19-.14 1.71-.38h.39a3.15 3.15 0 0 1 3.15 3.15Zm-8.25-6.9c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3Z",
+  fill: "#231f20"
+}));
+icons.categories = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 14.72 14.13"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M3.02 3.61h1.3s-.04-.02-.05-.03C2.78 2.72.87 3.23.01 4.71l.54.31C1 4.23 1.83 3.79 2.68 3.78V3.6h.34ZM2.68 5.56V5.4c-.29 0-.57.16-.73.43l.76.44.75-.43a.952.952 0 0 0-.25-.28h-.53Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M4.43 1.9h1v-.34L2.72 0 0 1.57v2.32c.47-.53 1.08-.91 1.77-1.1.9-.24 1.84-.13 2.65.32V1.9ZM.98 5.27l.54.31c.25-.43.69-.67 1.16-.68v-.63c-.68.01-1.33.37-1.7.99Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  fill: "#4d4d4e",
+  d: "M6.05 3.94v-1.7H4.76v1.7H3.02v1.29H4.76v3.38h1.29V5.23h1.74V3.94H6.05z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "7.04",
+  y: "10.67",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "11.26",
+  y: "10.67",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "7.04",
+  y: "6.45",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "11.26",
+  y: "6.45",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}));
+icons.listing = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 14.72 14.13"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M3.02 3.61h1.3s-.04-.02-.05-.03C2.78 2.72.87 3.23.01 4.71l.54.31C1 4.23 1.83 3.79 2.68 3.78V3.6h.34ZM2.68 5.56V5.4c-.29 0-.57.16-.73.43l.76.44.75-.43a.952.952 0 0 0-.25-.28h-.53Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M4.43 1.9h1v-.34L2.72 0 0 1.57v2.32c.47-.53 1.08-.91 1.77-1.1.9-.24 1.84-.13 2.65.32V1.9ZM.98 5.27l.54.31c.25-.43.69-.67 1.16-.68v-.63c-.68.01-1.33.37-1.7.99Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  fill: "#4d4d4e",
+  d: "M6.05 3.94v-1.7H4.76v1.7H3.02v1.29H4.76v3.38h1.29V5.23h1.74V3.94H6.05z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "7.04",
+  y: "10.67",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "11.26",
+  y: "10.67",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "7.04",
+  y: "6.45",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "11.26",
+  y: "6.45",
+  width: "3.22",
+  height: "3.22",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}));
+icons.categorydescription = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 13.78 13.19"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M3.02 3.61h1.3s-.04-.02-.05-.03C2.78 2.72.87 3.23.01 4.71l.54.31C1 4.23 1.83 3.79 2.68 3.78V3.6h.34ZM2.68 5.56V5.4c-.29 0-.57.16-.73.43l.76.44.75-.43a.952.952 0 0 0-.25-.28h-.53Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M4.43 1.9h1v-.34L2.72 0 0 1.57v2.32c.47-.53 1.08-.91 1.77-1.1.9-.24 1.84-.13 2.65.32V1.9ZM.98 5.27l.54.31c.25-.43.69-.67 1.16-.68v-.63c-.68.01-1.33.37-1.7.99Z",
+  fill: "#f79520"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  fill: "#4d4d4e",
+  d: "M6.05 3.94v-1.7H4.76v1.7H3.02v1.29H4.76v3.38h1.29V5.23h1.74V3.94H6.05z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  x: "7.04",
+  y: "6.45",
+  width: "6.49",
+  height: "6.49",
+  rx: ".57",
+  ry: ".57",
+  fill: "none",
+  stroke: "#231f20",
+  "stroke-miterlimit": "10",
+  "stroke-width": ".5"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "M9.95 10.98v-1.1H9.8c-.08 0-.15-.07-.15-.15v-.36c0-.08.07-.15.15-.15h.85c.08 0 .15.07.15.15v1.62h.15c.08 0 .15.07.15.15v.36c0 .08-.07.15-.15.15H9.79c-.08 0-.15-.07-.15-.15v-.36c0-.08.07-.15.15-.15h.15Zm.97-2.68c0 .3-.25.55-.55.55s-.55-.25-.55-.55.25-.55.55-.55.55.25.55.55Z",
+  fill: "#231f20"
+}));
+/* harmony default export */ __webpack_exports__["default"] = (icons);
 
 /***/ }),
 
@@ -17,7 +218,6 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
   \**********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Edit; }
@@ -156,7 +356,6 @@ function Edit(_ref) {
   \***********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
@@ -208,7 +407,6 @@ __webpack_require__.r(__webpack_exports__);
   \**********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ save; }
@@ -251,7 +449,6 @@ function save(_ref) {
   \**************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -264,7 +461,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -277,7 +473,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************/
 /***/ (function(module) {
 
-"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -288,7 +483,6 @@ module.exports = window["wp"]["blockEditor"];
   \********************************/
 /***/ (function(module) {
 
-"use strict";
 module.exports = window["wp"]["blocks"];
 
 /***/ }),
@@ -299,7 +493,6 @@ module.exports = window["wp"]["blocks"];
   \************************************/
 /***/ (function(module) {
 
-"use strict";
 module.exports = window["wp"]["components"];
 
 /***/ }),
@@ -310,7 +503,6 @@ module.exports = window["wp"]["components"];
   \*********************************/
 /***/ (function(module) {
 
-"use strict";
 module.exports = window["wp"]["element"];
 
 /***/ }),
@@ -321,7 +513,6 @@ module.exports = window["wp"]["element"];
   \******************************/
 /***/ (function(module) {
 
-"use strict";
 module.exports = window["wp"]["i18n"];
 
 /***/ }),
@@ -332,7 +523,6 @@ module.exports = window["wp"]["i18n"];
   \*************************************/
 /***/ (function(module) {
 
-"use strict";
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fim-ministries/contact-info","version":"0.1.0","title":"Minstry Contact","category":"ministry-blocks","description":"Ministry Contact Block","supports":{"html":false},"attributes":{"contact_position":{"type":"string","default":""},"contact_name":{"type":"string","default":""},"contact_phone":{"type":"string","default":""},"contact_email":{"type":"string","default":""}},"textdomain":"fim-ministries","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
