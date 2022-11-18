@@ -84,6 +84,7 @@ class FIM_Ministries_Public {
 			$post = get_post($ministry_page);
 			$content = $post->post_content;
 		}
+		
 		return $content;
 
 	}
