@@ -77,17 +77,6 @@ class FIM_Ministries_Public {
 
 	}
 
-	public function ministries_archive_display($content){
-
-			if( is_post_type_archive('ministries') ){
-			$ministry_page = get_option($this->option_name.'_page');
-			$post = get_post($ministry_page);
-			$content = $post->post_content;
-		}
-		
-		return $content;
-
-	}
 
 
 }

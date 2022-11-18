@@ -1,13 +1,22 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "fim-ministries/ministry-category-description",
+	"name": "fim-ministries/ministry-page-content",
 	"version": "0.1.0",
 	"title": "Ministry Page Content",
 	"category": "ministry-blocks",
-	"description": "Displays the content of the Selected Ministry Page",
+	"description": "Displays the selected Ministry page content",
 	"supports": {
-		"html": true
+		"html": true,
+		"align": [ "wide", "full" ]
+	},
+	"attributes": {
+		"align": {
+			"type" : "string"
+		},
+		"className":{
+			"type" : "string"
+		}
 	},
 	"textdomain": "fim-ministries",
 	"editorScript": "file:./index.js",

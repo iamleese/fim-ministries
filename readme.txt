@@ -30,7 +30,8 @@ This plugin creates ministry pages
 * Added Custom Blocks to Post Types
 
 -TODO:
-Convert classic editor posts to Gutenberg Blocks for backward compatibility
+* Convert classic editor posts to Gutenberg Blocks for backward compatibility
+* Select categories in ministry listings
 
 = 1.0.1 =
 * Added MetaBox Backward Compatibility for Gutenberg
