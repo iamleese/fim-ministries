@@ -220,7 +220,7 @@ class FIM_Ministries_Blocks {
 		$category_id = $attributes['category'];
 		$display_name = $attributes['category_name'];
 
-
+		ob_start();
 
 
 		$ministries_list = '<div class="ministries-list">';
@@ -256,6 +256,8 @@ class FIM_Ministries_Blocks {
 		}
 
 			$ministries_list .= '</div>';
+
+		$ministries_list .= ob_get_clean();
 
 		return $ministries_list;
 
