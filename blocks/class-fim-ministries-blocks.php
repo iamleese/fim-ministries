@@ -84,6 +84,7 @@ class FIM_Ministries_Blocks {
 					'category_name' => ['type' => 'boolean', 'default' => true],
 			]
 		));
+
 		register_block_type( __DIR__ . '/build/ministry-categories', array(
 			'render_callback' => array($this, 'MinistriesCategoryMenu'),
 			'attributes' => [
@@ -95,6 +96,16 @@ class FIM_Ministries_Blocks {
 		));
 		register_block_type( __DIR__ . '/build/ministry-category-description', array(
 			'render_callback' => array($this, 'MinistryCategoryDescription')
+		));
+
+		register_block_type( __DIR__ . '/build/ministry-page-content', array(
+			'render_callback' => array($this, 'MinistryPageContent'),
+			'attributes' => [
+					'align' => ['type' => 'string',
+											'default' => ''],
+					'className' => ['type' => 'string',
+													'default' => 'wp-blocks-fim-ministries-ministry-page-content']
+				]
 		));
 
 	}
@@ -220,8 +231,6 @@ class FIM_Ministries_Blocks {
 		$category_id = $attributes['category'];
 		$display_name = $attributes['category_name'];
 
-		ob_start();
-
 
 		$ministries_list = '<div class="ministries-list">';
 
@@ -267,6 +276,23 @@ class FIM_Ministries_Blocks {
 
 	public function MinistryCategoryDescription(){
 		return term_description();
+	}
+
+	public function MinistryPageContent($attributes){
+
+		$className = $attributes['className'];
+		$align = $attributes['align'] ? $attributes['align'] : '';
+
+		$blockProps = implode(' ', array($className, $align ? 'align'.$align : ''));
+		$ministry_page = get_option($this->option_name.'_page');
+		$postcontent = get_post_field('post_content', $ministry_page);
+
+		ob_start();
+		$content = '<div class="'.$blockProps.'">';
+		$content .= apply_filters('the_content',$postcontent);
+		$content .= '</div>';
+		$content .= ob_get_clean();
+		return $content;
 	}
 
 }

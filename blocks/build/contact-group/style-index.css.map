@@ -1,0 +1,1 @@
+{"version":3,"file":"contact-group/style-index.css","mappings":";;;AAGG;EACE;AAFL,C","sources":["webpack://blocks/./src/contact-group/style.scss"],"sourcesContent":["//Front + Back End styles\n\n .wp-block-fim-ministries-contact-group {\n   & > div{\n     margin-bottom: 1em;\n   }\n }\n"],"names":[],"sourceRoot":""}

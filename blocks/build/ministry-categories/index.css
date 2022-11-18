@@ -1,1 +1,35 @@
-.wp-block-fim-ministries-ministry-categories .ministry_category_menu{display:block;list-style-type:none;padding:1em}.wp-block-fim-ministries-ministry-categories .ministry_category_menu a{color:inherit}.wp-block-fim-ministries-ministry-categories .ministry_category_menu li{margin-left:0;padding-left:0}.wp-block-fim-ministries-ministry-categories .ministry_category_menu li ul.sub_category{display:block;list-style-type:none;padding:0 .5em}
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/ministry-categories/editor.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-fim-ministries-ministry-categories {
+  /**
+   * The following styles get applied both on the front of your site
+   * and in the editor.
+   *
+   * Replace them with your own styles or remove the file completely.
+   */
+}
+.wp-block-fim-ministries-ministry-categories .ministry_category_menu {
+  display: block;
+  list-style-type: none;
+  padding: 1em;
+}
+.wp-block-fim-ministries-ministry-categories .ministry_category_menu a {
+  color: inherit;
+}
+.wp-block-fim-ministries-ministry-categories .ministry_category_menu li {
+  padding-left: 0;
+  margin-left: 0;
+}
+.wp-block-fim-ministries-ministry-categories .ministry_category_menu li ul.sub_category {
+  display: block;
+  padding: 0 0.5em;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=index.css.map*/

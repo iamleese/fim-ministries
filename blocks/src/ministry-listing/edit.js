@@ -35,9 +35,8 @@ export default function Edit( { attributes, setAttributes } ) {
                     }
                     onChange={ (val) => { setAttributes( { hide_empty: val } );
                     } }
-
                   />
-                  </PanelRow>
+                </PanelRow>
 
               </PanelBody>
           </Panel>
