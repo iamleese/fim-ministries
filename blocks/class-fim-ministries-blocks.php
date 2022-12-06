@@ -79,9 +79,7 @@ class FIM_Ministries_Blocks {
 		register_block_type( __DIR__ . '/build/ministry-listing', array(
 			'render_callback' => array($this, 'MinistriesList'),
 			'attributes' => [
-					'hide_empty' => ['type' => 'boolean', 'default' => true ],
-					'category' => ['type' => 'string', 'default' => ''],
-					'category_name' => ['type' => 'boolean', 'default' => true],
+					'hide_empty' => ['type' => 'boolean', 'default' => true ]
 			]
 		));
 
@@ -228,9 +226,7 @@ class FIM_Ministries_Blocks {
 	public function MinistriesList($attributes){
 
 		$hide_empty = $attributes['hide_empty'];
-		$category_id = $attributes['category'];
-		$display_name = $attributes['category_name'];
-
+	
 
 		$ministries_list = '<div class="ministries-list">';
 
