@@ -251,7 +251,6 @@ class FIM_Ministries_Blocks {
 
 		$noterms = new WP_QUERY($args);
 
-
 		$ministries_list = '<div class="ministries-list">';
 		
 
