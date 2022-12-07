@@ -115,20 +115,40 @@ class FIM_Ministries_Blocks {
 	//Ministry Pages Within Categories
 	public function MinistryPages($category, $taxonomy_name){
 		ob_start();
-		global $wpdb;
-		$posttable = $wpdb->posts;
-		$termrelation = $wpdb->term_relationships;
+	
 		$taxonomy_name = 'ministry-category';
 
-		$pagelist = $wpdb->get_results("SELECT $posttable.ID,$posttable.post_title FROM $posttable,$termrelation WHERE $posttable.post_type LIKE '%ministries%' AND $posttable.post_status LIKE '%publish%' AND $posttable.ID = $termrelation.object_id AND $termrelation.term_taxonomy_id = $category ORDER BY $posttable.post_title ASC");
+		$args = [
+			'post_type' => 'ministries',
+			'tax_query' => [
+					['taxonomy' => $taxonomy_name,
+					'field' => 'term_id',
+					'terms' => $category,
+					'include_children' => false
+					]				
+				]
+			];
+		
+
+		$pagelist = new WP_QUERY($args);
+
+		//$pagelist = $wpdb->get_results("SELECT $posttable.ID,$posttable.post_title FROM $posttable,$termrelation WHERE $posttable.post_type LIKE '%ministries%' AND $posttable.post_status LIKE '%publish%' AND $posttable.ID = $termrelation.object_id AND $termrelation.term_taxonomy_id = $category ORDER BY $posttable.post_title ASC");
 
 		$ministry_pages = '';
 
-		foreach($pagelist as $page){
-			$ministry_pages .= '<li id="ministry-id-'.$page->ID.'"><a href="'.get_the_permalink($page->ID).'">'.$page->post_title.'</a></li>';
+		if($pagelist->have_posts()){
+			while($pagelist->have_posts()){
+				$pagelist->the_post();
+				$ministry_pages .= '<li id="ministry-id-'.get_the_ID().'"><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
+
+			}
+			
+
 		}
+	
 
 		$ministry_pages .= ob_get_clean();
+		wp_reset_postdata();
 
 		return $ministry_pages;
 	}
@@ -217,7 +237,7 @@ class FIM_Ministries_Blocks {
 				$term = get_term_by( 'id', $child, $taxonomy_name );
 				if($term->count > 0 || ( $hide_empty == false && $term->count == 0 ) ) {
 					$ministry_category .= '<li class="sub_category_title"><a href="' . get_term_link( $child, $taxonomy_name ) . '">' . $term->name . '</a></li>';
-					$this->MinistryPages($term->term_id,$taxonomy_name);
+					$ministry_category .= $this->MinistryPages($term->term_id,$taxonomy_name);
 				}
 			}
 
