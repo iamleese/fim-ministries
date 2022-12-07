@@ -10,7 +10,7 @@
  * Plugin Name:       FIM Ministries
  * Plugin URI:        https://faithinmarketing.com/websites
  * Description:       Faith in Marketing Ministry Plugin
- * Version:           2.1.1
+ * Version:           3.0.1
  * Author:            Melissa R Hiatt
  * Author URI:        https://faithinmarketing.com
  * License:           GPL-2.0+
@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
 * Plugin Version
 */
-define( 'FIM_MINISTRIES_VERSION', '2.1.1' );
+define( 'FIM_MINISTRIES_VERSION', '3.0.1' );
 
 /**
  * Plugin Activator
