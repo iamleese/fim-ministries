@@ -114,6 +114,7 @@ class FIM_Ministries_Blocks {
 
 	//Ministry Pages Within Categories
 	public function MinistryPages($category, $taxonomy_name){
+		ob_start();
 		global $wpdb;
 		$posttable = $wpdb->posts;
 		$termrelation = $wpdb->term_relationships;
@@ -127,12 +128,14 @@ class FIM_Ministries_Blocks {
 			$ministry_pages .= '<li id="ministry-id-'.$page->ID.'"><a href="'.get_the_permalink($page->ID).'">'.$page->post_title.'</a></li>';
 		}
 
+		$ministry_pages .= ob_get_clean();
+
 		return $ministry_pages;
 	}
 
 	//Ministry Categories and Subcategories
 	public function MinistriesCategoryMenu($attributes){
-
+		ob_start();
 		$show_subcategories = $attributes['show_subcategories'];
 		$hide_empty = $attributes['hide_empty'];
 		$show_all = $attributes['show_all'];
@@ -191,6 +194,8 @@ class FIM_Ministries_Blocks {
 
 		$ministry_category .= '</ul><!-- end category menu -->';
 
+		$ministry_category .= ob_get_clean();
+
 		return $ministry_category;
 
 	} //end Ministries Category List
@@ -198,6 +203,7 @@ class FIM_Ministries_Blocks {
 
 	//Ministry Category list
 	public function MinistriesCategoryList($category, $hide_empty){
+		ob_start();
 		$taxonomy_name = 'ministry-category';
 
 		$ministry_category = $this->MinistryPages($category, $taxonomy_name);
@@ -216,7 +222,9 @@ class FIM_Ministries_Blocks {
 			}
 
 				$ministry_category .= '</ul>';
-			}
+		}
+
+		$ministry_category .= ob_get_clean();
 
 		return $ministry_category;
 
@@ -224,13 +232,41 @@ class FIM_Ministries_Blocks {
 
 	//Ministry Full List
 	public function MinistriesList($attributes){
-
+		
 		$hide_empty = $attributes['hide_empty'];
-	
+
+		$ministry_categories = get_terms('ministry-category', ['fields' => 'ids']);
+
+
+		$args = [
+				'post_type' => 'ministries',
+				'tax_query' => [
+						['taxonomy' => 'ministry-category',
+						'field' => 'term_id',
+						'operator' => 'NOT EXISTS',
+						'terms' => $ministry_categories
+						]
+					]
+				];
+
+		$noterms = new WP_QUERY($args);
 
 		$ministries_list = '<div class="ministries-list">';
+		
 
-		if($category_id == ''){
+		if($noterms->have_posts()){
+			$ministries_list .= '<div class="ministry-category-wrap">';
+			while ($noterms->have_posts()) {
+				$noterms->the_post();
+				$ministries_list .= '<li id="ministry-id-'.get_the_ID().'"><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
+			}
+			$ministries_list .= '</div>';
+				
+		}
+
+		wp_reset_postdata();
+
+		/*if($category == ''){*/
 
 			$categories = get_terms( array(
 				'taxonomy' => 'ministry-category',
@@ -247,7 +283,7 @@ class FIM_Ministries_Blocks {
 					$ministries_list .= '</div>';
 				}
 
-		} else {
+		/*} else {
 
 				$ministries_list .= '<div class="ministry-category-wrap">';
 
@@ -258,7 +294,7 @@ class FIM_Ministries_Blocks {
 				}
 				$ministries_list .= $this->MinistriesCategoryList($category_id, $hide_empty);
 				$ministries_list .= '</div>';
-		}
+		}*/
 
 			$ministries_list .= '</div>';
 
