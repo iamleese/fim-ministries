@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "fim-ministries/contact-info",
+  "version": "0.1.0",
+  "title": "Minstry Contact",
+  "category": "ministry-blocks",
+  "description": "Ministry Contact Block",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "contact_position": {
+      "type": "string",
+      "default": ""
+    },
+    "contact_name": {
+      "type": "string",
+      "default": ""
+    },
+    "contact_phone": {
+      "type": "string",
+      "default": ""
+    },
+    "contact_email": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "fim-ministries",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

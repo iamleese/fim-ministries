@@ -1,8 +1,25 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
+const blockAtts= {
+  contact_position:{
+    type: 'string',
+  },
+  contact_name: {
+    type: 'string',
+  },
+  contact_phone: {
+    type: 'string',
+  },
+  contact_email: {
+    type: 'string',
+  }
+}
 
 const v1 = {
+
+  attributes: blockAtts,
+ 
   save({attributes}) {
     const position = attributes.contact_position;
     const name = attributes.contact_name;
@@ -17,7 +34,7 @@ const v1 = {
         {email ? <span className="contact-email" ><a href={email}>{__('Email')}</a></span> : ''}
         </div>
     );
-  }
+  },
 }
 
 export default [ v1 ];
