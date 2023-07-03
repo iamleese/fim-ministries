@@ -37,6 +37,6 @@ registerBlockType( metadata.name, {
 	/**
 	 * @see ./deprecated.js
 	 */
-	deprecated
+	deprecated,
 	
 } );

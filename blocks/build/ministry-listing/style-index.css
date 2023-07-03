@@ -1,0 +1,51 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/ministry-listing/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.ministries-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+}
+.ministries-list .ministry-category-name {
+  margin: 0.5em 0;
+  font-weight: 700;
+}
+.ministries-list .ministry-category-name a {
+  text-decoration: none;
+}
+.ministries-list .ministry-category-name a:hover {
+  text-decoration: underline;
+}
+.ministries-list li {
+  list-style-type: none;
+}
+.ministries-list .sub_category {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.ministries-list .sub_category .sub_category_title {
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.ministries-list .sub_category .sub_category_title a {
+  color: inherit;
+  text-decoration: none;
+}
+.ministries-list .sub_category .sub_category_title a:hover {
+  text-decoration: underline;
+}
+.ministries-list .sub_category li {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
