@@ -8,7 +8,7 @@ This is a WordPress plugin creates a new "Ministry" post type that contains cust
 - [Usage](#usage)
 - [Changelog](#changelog)
 - [TODO](#todo)
-- [Support] (#support)
+- [Support](#support)
 
 ## Installation
 
