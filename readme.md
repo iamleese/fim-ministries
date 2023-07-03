@@ -23,6 +23,9 @@ Create, edit and delete ministries as you would any post or page!
 
 ## Changelog
 
+### 3.0.2
+* Added deprecation
+
 ### 3.0.1
 * Fixed contact email output
 
