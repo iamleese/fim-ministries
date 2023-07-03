@@ -6,7 +6,7 @@ export default function save({attributes}) {
   const position = attributes.contact_position;
   const name = attributes.contact_name;
   const phone = attributes.contact_phone;
-  const email = attributes.contact_email;
+  const email = "mailto:" + attributes.contact_email;
 
 	return (
 			<div { ...useBlockProps.save() }>
