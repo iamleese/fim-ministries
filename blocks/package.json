@@ -16,6 +16,6 @@
 	},
 	"dependencies": {
 		"@wordpress/api-fetch": "^6.17.0",
-		"@wordpress/scripts": "^26.7.0"
+		"@wordpress/scripts": "^26.11.0"
 	}
 }
